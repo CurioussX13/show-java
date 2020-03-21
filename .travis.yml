@@ -1,7 +1,7 @@
 language: android
 os: linux
 dist: bionic
-jdk: oraclejdk8
+jdk: oraclejdk11
 
 sudo: false
 
