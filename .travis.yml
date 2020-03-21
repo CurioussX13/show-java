@@ -40,4 +40,4 @@ before_script:
   - cat app/keys.properties.example | envsubst > app/keys.properties
 
 script:
-  - ./gradlew assembleRelease --stacktrace -w --debug 
+  - ./gradlew assembleRelease --stacktrace -w --info
