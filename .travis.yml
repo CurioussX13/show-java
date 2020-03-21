@@ -1,5 +1,6 @@
 language: android
-
+os: linux
+dist: bionic
 jdk: oraclejdk8
 
 sudo: false
@@ -17,9 +18,9 @@ env:
 android:
   components:
     - tools
-    - android-28
+    - android-29
 #    - android-$API_LEVEL
-    - build-tools-28.0.3
+    - build-tools-29.0.3
     - platform-tools
     - extra
 #    - sys-img-$ANDROID_ABI-$SYS_IMAGE_TAG-$API_LEVEL
