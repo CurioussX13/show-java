@@ -13,7 +13,6 @@ android:
     - tools
     - platform-tools
     - tools
-    ~ extra
     - extra-android-m2repository
   licenses:
     - 'android-sdk-preview-license-52d11cd2'
