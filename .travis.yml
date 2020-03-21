@@ -22,6 +22,10 @@ android:
     - platform-tools
     - extra
 #    - sys-img-$ANDROID_ABI-$SYS_IMAGE_TAG-$API_LEVEL
+  licenses:
+    - 'android-sdk-preview-license-52d11cd2'
+    - 'android-sdk-license-.+'
+    - 'google-gdk-license-.+'
 
 before_cache:
   - rm -rf  $HOME/.gradle/caches/modules-2/modules-2.lock
