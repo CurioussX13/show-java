@@ -44,7 +44,8 @@ cache:
 before_script:
   - cp -f app/mock-google-services.json app/google-services.json
   - cat app/keys.properties.example | envsubst > app/keys.properties
-
+before_install:
+    - yes | sdkmanager "platforms;android-29"
 script:
 #  - ./gradlew connectedAndroidTest --stacktrace -w
   - ./gradlew assembleRelease --stacktrace -w
