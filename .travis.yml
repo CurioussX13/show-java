@@ -13,6 +13,7 @@ android:
     - tools
     - platform-tools
     - tools
+    ~ extra
     - extra-android-m2repository
   licenses:
     - 'android-sdk-preview-license-52d11cd2'
@@ -25,8 +26,8 @@ before_install:
   - yes | sdkmanager "build-tools;29.0.3"
 
 before_cache:
-  - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
-  - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
+  - rm -rf  $HOME/.gradle/caches/modules-2/modules-2.lock
+  - rm -rf $HOME/.gradle/caches/*/plugin-resolution/
 
 cache:
   directories:
