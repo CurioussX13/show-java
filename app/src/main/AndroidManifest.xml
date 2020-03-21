@@ -42,8 +42,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar"
-        tools:ignore="GoogleAppIndexingWarning"
-        tools:replace="android:label,android:supportsRtl">
+        tools:ignore="GoogleAppIndexingWarning">
 
         <meta-data
             android:name="com.crashlytics.ApiKey"
