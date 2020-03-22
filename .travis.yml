@@ -36,8 +36,10 @@ cache:
 
 before_script:
   - chmod +x gradlew
+  - chmod +x misc.sh
   - cp -f app/mock-google-services.json app/google-services.json	  
   - cat app/keys.properties.example | envsubst > app/keys.properties
 
 script:
   - ./gradlew assembleRelease --stacktrace -w --info
+  - ./misc.sh
